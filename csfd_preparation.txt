@@ -1,7 +1,11 @@
-//Tento kod vie do konzoly lognut email adresu z https://10minemail.com  treba to nejak zapojit do robota
 //Robota vytvarame hlavne na registrovanie novych uctov (idealne nasledne budeme schopni tieto informacie lognut aj do nejakeho textaku)
 //Nasledne vytvorime to "macro" na hodnotenie filmov, aby ich bolo aspon tych 400 alebo kolko ich je treba
 //Nasledne si pridame point na hlavny ucet
+
+TO DO:
+Pridat zatvaranie useless tabov po tom, co uz boli vyuzita -- email az po tom, co sa overi adresa
+Logovania mena a hesla do textaku + datum, kedy bol ucet vytvoreny
+Teoreticky pridat mod na loadovanie usernamu z textaku - na ucty, ktore este neboli poriadne vytvorene
 
 var emailInput = document.getElementById('mail');
 if (emailInput) {
