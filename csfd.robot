@@ -4,12 +4,15 @@ Library    Dialogs
 Library    Collections
 Library    OperatingSystem
 Library    SeleniumLibrary
+Library    DateTime
 
 
 *** Variables ***
 ${URL}=    https://www.csfd.sk/ 
 ${cookies_confirmation}=    xpath=//*[@id="didomi-notice-agree-button"]
 ${csfd_confirmation}=    xpath=/html/body/div[2]/div[2]/div/div/div/span/div/footer/span/a
+${file}   ./accs.txt
+${password}    Kokot123
 
 *** Test Cases ***
 CSFD - The return of the king
@@ -67,6 +70,9 @@ CSFD - The return of the king
     Sleep    2s
     Select Frame    xpath:/html/body/div[1]/main/div[1]/div[1]/div[2]/div/div/div[2]/div[2]/div[3]/iframe
     Wait Until Element Is Visible    xpath:/html/body/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/p[3]/a
+    ${username}    Get Text    xpath:/html/body/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/p[1]/strong
+    ${time}    Get Time    %Y-%m-%d %H:%M:%S
+    Append To File    ${file}    ${username}:${password} - ${time}\n
     
     #Click Element    xpath:/html/body/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/p[3]/a
 

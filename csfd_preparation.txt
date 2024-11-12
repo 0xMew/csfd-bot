@@ -1,15 +1,18 @@
 //Robota vytvarame hlavne na registrovanie novych uctov (idealne nasledne budeme schopni tieto informacie lognut aj do nejakeho textaku)
 //Nasledne vytvorime to "macro" na hodnotenie filmov, aby ich bolo aspon tych 400 alebo kolko ich je treba
 //Nasledne si pridame point na hlavny ucet -
-// Vymysliet poriadne logovanie nazvov uctov
-// Vymysliet lepsi sposob na generovanie nazvovo uctov (parsovat z POE databazy cez api/generator kaukazskych mien/parsovat z namemc.../generovat zvlast)
+//Vymysliet poriadne logovanie nazvov uctov
+//Primarne hodnotiace makro na test cisto cez naruta shippuden
+//Hodnotenie nahodnych filmov podla urlka - random vygenerujem url kod filmu (rozpatie cisel) a dame nahodne hodnotenie (1-5 hviedzd podla random premennej z pozbieranych elementov)
+//Spravit slovensku variaciu pre scripty (asi tam budu ine login requirements)
+
+Fantasy:
+Generovanie AI profiloviek k tym menam
+AI promtovanie recenzii k filmom
+Lepsi sposob na generovanie nazvovo uctov (parsovat z POE databazy cez api/generator kaukazskych mien/parsovat z namemc.../generovat zvlast)
+
 
 TO DO:
 Pridat zatvaranie useless tabov po tom, co uz boli vyuzita -- email az po tom, co sa overi adresa
-Logovania mena a hesla do textaku + datum, kedy bol ucet vytvoreny
-Teoreticky pridat mod na loadovanie usernamu z textaku - na ucty, ktore este neboli poriadne vytvorene
-
-var emailInput = document.getElementById('mail');
-if (emailInput) {
-    console.log(emailInput.value);
-}
+Teoreticky pridat mod na loadovanie usernamu z textaku - na ucty, ktore este neboli poriadne vytvorene - na konci riadku bude nejaky tag, podla ktoreho zistime, ci uz ma dany ucet odhodnete filmy
+ak ich ma, tak ich sorter na loginy vynecha a pojde checknut dalsi riadok - to ci ich ma, budeme zatial kontrolovat manualne - da sa to aj zautomatizovat neskor profile, asi to nebude treba
