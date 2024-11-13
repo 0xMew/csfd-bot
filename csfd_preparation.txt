@@ -16,3 +16,6 @@ TO DO:
 Pridat zatvaranie useless tabov po tom, co uz boli vyuzita -- email az po tom, co sa overi adresa
 Teoreticky pridat mod na loadovanie usernamu z textaku - na ucty, ktore este neboli poriadne vytvorene - na konci riadku bude nejaky tag, podla ktoreho zistime, ci uz ma dany ucet odhodnete filmy
 ak ich ma, tak ich sorter na loginy vynecha a pojde checknut dalsi riadok - to ci ich ma, budeme zatial kontrolovat manualne - da sa to aj zautomatizovat neskor profile, asi to nebude treba
+
+
+xpath:/html/body/div[2]/div[2]/div/div[1]/aside/div/div[1]/div[2]/span/a[6] //star rating mozem davat random podla pripony [x] za a od 1 do 6

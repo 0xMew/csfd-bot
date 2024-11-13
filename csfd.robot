@@ -73,7 +73,6 @@ CSFD - The return of the king
     ${username}    Get Text    xpath:/html/body/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/p[1]/strong
     ${time}    Get Time    %Y-%m-%d %H:%M:%S
     Append To File    ${file}    ${username}:${password} - ${time}\n
-    
-    #Click Element    xpath:/html/body/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/p[3]/a
+    Click Element    xpath:/html/body/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/p[3]/a
 
 
