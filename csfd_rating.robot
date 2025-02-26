@@ -9,7 +9,7 @@ Library    DateTime
 
 *** Variables ***
 ${file}   ./accs.txt
-${username}    Getoshi
+${username}    Helasius
 ${password}    Kokot123
 ${URL}    https://www.csfd.sk/prihlasenie/
 ${cookies_confirmation}    xpath=//*[@id="didomi-notice-agree-button"]
@@ -30,7 +30,7 @@ CSFD Rating - Bot to 200 rates
     Sleep    1s
 
     
-    FOR    ${counter}    IN RANGE    1    230
+    FOR    ${counter}    IN RANGE    1    210
         ${csfd_movie_id}    Evaluate    random.randint(1, 10000)    modules=random
         ${csfd_rating_randomizer}    Evaluate    random.randint(1, 6)    modules=random
         ${csfd_rating}    Set Variable    xpath:/html/body/div[2]/div[2]/div/div[1]/aside/div/div[1]/div[2]/span/a[${csfd_rating_randomizer}]   

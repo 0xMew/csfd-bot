@@ -4,18 +4,14 @@
 //Vymysliet poriadne logovanie nazvov uctov
 //Primarne hodnotiace makro na test cisto cez naruta shippuden
 //Hodnotenie nahodnych filmov podla urlka - random vygenerujem url kod filmu (rozpatie cisel) a dame nahodne hodnotenie (1-5 hviedzd podla random premennej z pozbieranych elementov)
-//Spravit slovensku variaciu pre scripty (asi tam budu ine login requirements)
+//Spravit slovensku variaciu pre scripty (asi tam budu ine login requirements) -- celkovo nejaka lokalizacia, lebo nie vsade budu tie podmienky rovnake
 
 Fantasy:
 Generovanie AI profiloviek k tym menam
 AI promtovanie recenzii k filmom
 Lepsi sposob na generovanie nazvovo uctov (parsovat z POE databazy cez api/generator kaukazskych mien/parsovat z namemc.../generovat zvlast)
-
+https://10minutesemail.net/ - zaujimava stranka na generovanie emailov s EDU priponou
 
 TO DO:
-Pridat zatvaranie useless tabov po tom, co uz boli vyuzita -- email az po tom, co sa overi adresa
 Teoreticky pridat mod na loadovanie usernamu z textaku - na ucty, ktore este neboli poriadne vytvorene - na konci riadku bude nejaky tag, podla ktoreho zistime, ci uz ma dany ucet odhodnete filmy
 ak ich ma, tak ich sorter na loginy vynecha a pojde checknut dalsi riadok - to ci ich ma, budeme zatial kontrolovat manualne - da sa to aj zautomatizovat neskor profile, asi to nebude treba
-
-
-xpath:/html/body/div[2]/div[2]/div/div[1]/aside/div/div[1]/div[2]/span/a[6] //star rating mozem davat random podla pripony [x] za a od 1 do 6
