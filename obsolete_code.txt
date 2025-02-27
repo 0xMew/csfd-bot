@@ -1,0 +1,16 @@
+    Execute JavaScript    window.open("https://www.fantasynamegenerators.com/lamia-names.php", "_blank")
+    ${handles}=    Get Window Handles
+    Switch Window    ${handles}[-1]
+    Sleep    3s
+    Location Should Contain    fantasynamegenerators.com
+    
+    #Wait Until Element Is Enabled    xpath:/html/body/div[3]/div/div/div[3]/div[1]/button[2]
+    Click Element    xpath:/html/body/div[3]/div/div/div[3]/div[1]/button[2]
+    Wait Until Element Is Visible     xpath://*[@id="result"]
+    Click Element    xpath://*[@id="result"]
+    Press Keys    None    CTRL+c
+    Sleep    1s 
+    Switch Window    ${handles}[0]
+    Sleep    2s
+    Click Element    xpath://*[@id="frm-registrationForm-nick"]
+    Press Keys    xpath=//*[@id="frm-registrationForm-nick"]    CTRL+v

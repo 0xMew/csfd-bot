@@ -1,17 +1,13 @@
-//Robota vytvarame hlavne na registrovanie novych uctov (idealne nasledne budeme schopni tieto informacie lognut aj do nejakeho textaku)
-//Nasledne vytvorime to "macro" na hodnotenie filmov, aby ich bolo aspon tych 400 alebo kolko ich je treba
-//Nasledne si pridame point na hlavny ucet -
-//Vymysliet poriadne logovanie nazvov uctov
-//Primarne hodnotiace makro na test cisto cez naruta shippuden
-//Hodnotenie nahodnych filmov podla urlka - random vygenerujem url kod filmu (rozpatie cisel) a dame nahodne hodnotenie (1-5 hviedzd podla random premennej z pozbieranych elementov)
-//Spravit slovensku variaciu pre scripty (asi tam budu ine login requirements) -- celkovo nejaka lokalizacia, lebo nie vsade budu tie podmienky rovnake
+//Ak sa dojebe stranka na 10memaily, tak treba najst nejaku idealne rusku bez bot checkerov a bez kokotnych cookies acceptances
+//Asi to uz niekde bolo skor naznacene, ale spravit poe name parser do textaxu z waybackmachine archivu uctov hrajucich manaforged arrow - nasledne parsnute nicky validovat a pretriedit od nevhodnych znakov
 
 Fantasy:
+
 Generovanie AI profiloviek k tym menam
 AI promtovanie recenzii k filmom
-Lepsi sposob na generovanie nazvovo uctov (parsovat z POE databazy cez api/generator kaukazskych mien/parsovat z namemc.../generovat zvlast)
-https://10minutesemail.net/ - zaujimava stranka na generovanie emailov s EDU priponou
+Lepsi sposob na generovanie nazvov uctov (parsovat z POE databazy cez api/generator kaukazskych mien/parsovat z namemc.../generovat zvlast)
+Spravit slovensku variaciu pre scripty (asi tam budu ine login requirements) -- celkovo nejaka lokalizacia, lebo nie vsade budu tie podmienky rovnake
+
 
 TO DO:
-Teoreticky pridat mod na loadovanie usernamu z textaku - na ucty, ktore este neboli poriadne vytvorene - na konci riadku bude nejaky tag, podla ktoreho zistime, ci uz ma dany ucet odhodnete filmy
-ak ich ma, tak ich sorter na loginy vynecha a pojde checknut dalsi riadok - to ci ich ma, budeme zatial kontrolovat manualne - da sa to aj zautomatizovat neskor profile, asi to nebude treba
+Poe nammes sorter - 3-12 znakov, nejsu povolene cincongy ani azbuka, meno - musi zacinat cislom alebo pismenom, nakodit k tomuto validaciu
