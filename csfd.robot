@@ -22,7 +22,8 @@ ${index}=    0
 
 *** Test Cases ***
 CSFD - The return of the king
-    Open Browser    ${URL}    Firefox
+    #Momentalne trva zaregistrovat jeden ucet 42 sekund
+    Open Browser    ${URL}    headlessfirefox
     Wait Until Element Is Visible    ${cookies_confirmation}
     Click Button    ${cookies_confirmation}
     Click Element    ${csfd_confirmation}
@@ -54,10 +55,8 @@ CSFD - The return of the king
     Click Button    xpath:/html/body/div[2]/div[2]/div/form/div/div/div[1]/div[1]/section/div/div[3]/button
 
     Switch Window    ${handles}[1]
-    Sleep    20s
     Maximize Browser Window
     Execute JavaScript    window.scrollBy(0, 300)
-    Scroll Element Into View    ${email_location}
     Wait Until Element Is Visible    ${email_location}
     Click Element    ${email_location}
     Execute JavaScript    document.querySelector("[class*='h-[400px]'][class*='overflow-auto']").scrollTop += 800;
