@@ -22,8 +22,10 @@ ${index}=    0
 
 *** Test Cases ***
 CSFD - The return of the king
+    FOR    ${counter}    IN RANGE    1    11
     #Momentalne trva zaregistrovat jeden ucet 42 sekund
     Open Browser    ${URL}    headlessfirefox
+
     Wait Until Element Is Visible    ${cookies_confirmation}
     Click Button    ${cookies_confirmation}
     Click Element    ${csfd_confirmation}
@@ -67,5 +69,6 @@ CSFD - The return of the king
     ${updated_content}    Evaluate    '\\n'.join(${user_list})
     Create File    ${file_future_account}    ${updated_content}
     Close All Browsers
+    END
 
 
