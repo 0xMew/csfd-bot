@@ -1,13 +1,11 @@
-//Ak sa dojebe stranka na 10memaily, tak treba najst nejaku idealne rusku bez bot checkerov a bez kokotnych cookies acceptances
-//Asi to uz niekde bolo skor naznacene, ale spravit poe name parser do textaxu z waybackmachine archivu uctov hrajucich manaforged arrow - nasledne parsnute nicky validovat a pretriedit od nevhodnych znakov
+//Ak sa dojebe stranka na 10memaily, tak treba najst nejaku idealne rusku bez bot checkerov a bez kokotnych cookies acceptances - zo zahranicnej ip sa neriesi emailova domena
 
 Fantasy:
-
-Generovanie AI profiloviek k tym menam
-AI promtovanie recenzii k filmom
-Lepsi sposob na generovanie nazvov uctov (parsovat z POE databazy cez api/generator kaukazskych mien/parsovat z namemc.../generovat zvlast)
+AI promtovanie recenzii k filmom - useless, jedine ze by podobna vec bola niekedy prakticky vyuzitelna
 Spravit slovensku variaciu pre scripty (asi tam budu ine login requirements) -- celkovo nejaka lokalizacia, lebo nie vsade budu tie podmienky rovnake
 
 
 TO DO:
-Poe nammes sorter - 3-12 znakov, nejsu povolene cincongy ani azbuka, meno - musi zacinat cislom alebo pismenom, nakodit k tomuto validaciu
+Vygenerovat 1200 uctov
+Ziskat 1200 profiloviek k uctom - zdroj/tematika/spracovanie/whatever
+Setup, pri ktorom je mozne generovat ucty z viacerych instancii/VMs/PCs naraz

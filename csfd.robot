@@ -42,6 +42,7 @@ CSFD - The return of the king
     ${handles}=    Get Window Handles
     Switch Window    ${handles}[-1]
     Sleep    6s
+    Click Element    xpath:/html/body/div/div[2]/div[2]/div[2]/div[2]/button[1]
     Click Element    ${email_copy_button}
     Sleep    2s
 
@@ -59,6 +60,7 @@ CSFD - The return of the king
     Switch Window    ${handles}[1]
     Maximize Browser Window
     Execute JavaScript    window.scrollBy(0, 300)
+    Sleep    5s
     Wait Until Element Is Visible    ${email_location}
     Click Element    ${email_location}
     Execute JavaScript    document.querySelector("[class*='h-[400px]'][class*='overflow-auto']").scrollTop += 800;
