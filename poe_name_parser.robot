@@ -10,7 +10,7 @@ Library    BuiltIn
 
 *** Variables ***
 ${URL}=    https://poe.ninja/builds/phrecia?class=Polytheist
-${file}=    ./future_accs.txt
+${file}=    ./future_accs.kokot
 ${validation_regex}    ^[A-Za-z0-9_]+$
 ${no_underscore_start}    ^[^_]
 ${cookie_confirmation}    xpath:/html/body/div[8]/div[2]/div[2]/div[2]/div[2]/button[1]

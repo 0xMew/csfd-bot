@@ -12,9 +12,9 @@ Library    BuiltIn
 ${URL}=    https://www.csfd.sk/ 
 ${cookies_confirmation}=    xpath=//*[@id="didomi-notice-agree-button"]
 ${csfd_confirmation}=    xpath=/html/body/div[2]/div[2]/div/div/div/span/div/footer/span/a
-${file_done_accounts}   ./accs.txt
-${file_future_account}    ./future_accs.txt
-${password}    Kokot123
+${file_done_accounts}   ./accs.kokot
+${file_future_account}    ./future_accs.kokot
+${password}    Kokot
 ${email_copy_button}    xpath:/html/body/main/div/div[2]/section/div[1]/div/div/div[1]/button[2]
 ${email_service_url}    "https://minmail.app/10-minute-mail"
 ${email_location}    xpath:/html/body/main/div/div[2]/section/div[2]/div/div/div/div/div/div/div/div/div[2]/div[1]/h2
@@ -22,13 +22,13 @@ ${index}=    0
 
 *** Test Cases ***
 CSFD - The return of the king
-    FOR    ${counter}    IN RANGE    1    11
+    FOR    ${counter}    IN RANGE    1    2
     #Momentalne trva zaregistrovat jeden ucet 42 sekund
-    Open Browser    ${URL}    headlessfirefox
+    Open Browser    ${URL}    Firefox
 
     Wait Until Element Is Visible    ${cookies_confirmation}
     Click Button    ${cookies_confirmation}
-    Click Element    ${csfd_confirmation}
+    #Click Element    ${csfd_confirmation}
     Go To    https://www.csfd.sk/registracia/
 
     ${file_content}    Get File    ${file_future_account}
@@ -60,7 +60,7 @@ CSFD - The return of the king
     Switch Window    ${handles}[1]
     Maximize Browser Window
     Execute JavaScript    window.scrollBy(0, 300)
-    Sleep    5s
+    Sleep    10s
     Wait Until Element Is Visible    ${email_location}
     Click Element    ${email_location}
     Execute JavaScript    document.querySelector("[class*='h-[400px]'][class*='overflow-auto']").scrollTop += 800;
