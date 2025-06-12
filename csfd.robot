@@ -23,12 +23,12 @@ ${index}=    0
 *** Test Cases ***
 CSFD - The return of the king
     FOR    ${counter}    IN RANGE    1    2
-    #Momentalne trva zaregistrovat jeden ucet 42 sekund
+    #Registration + verification time - 42 sec
     Open Browser    ${URL}    Firefox
 
     Wait Until Element Is Visible    ${cookies_confirmation}
     Click Button    ${cookies_confirmation}
-    #Click Element    ${csfd_confirmation}
+    #Click Element    ${csfd_confirmation} only for non cz/sk proxies
     Go To    https://www.csfd.sk/registracia/
 
     ${file_content}    Get File    ${file_future_account}
@@ -37,7 +37,7 @@ CSFD - The return of the king
     Click Element    xpath://*[@id="frm-registrationForm-nick"]
     Input Text    xpath://*[@id="frm-registrationForm-nick"]    ${user}
 
-
+    #Provided email service doesent work anymore, dont even try
     Execute JavaScript    window.open(${email_service_url}, "_blank")
     ${handles}=    Get Window Handles
     Switch Window    ${handles}[-1]
@@ -51,9 +51,9 @@ CSFD - The return of the king
     Click Element    xpath://*[@id="frm-registrationForm-email"]
     Press Keys    xpath=//*[@id="frm-registrationForm-email"]    CTRL+v
     Click Element    xpath://*[@id="frm-registrationForm-password"]
-    Input Text   xpath://*[@id="frm-registrationForm-password"]    Kokot123
+    Input Text   xpath://*[@id="frm-registrationForm-password"]    Kokot
     Click Element    xpath://*[@id="frm-registrationForm-password_check"]
-    Input Text    xpath://*[@id="frm-registrationForm-password_check"]    Kokot123
+    Input Text    xpath://*[@id="frm-registrationForm-password_check"]    Kokot
     Click Element    xpath://*[@id="frm-registrationForm-terms_and_conditions"]
     Click Button    xpath:/html/body/div[2]/div[2]/div/form/div/div/div[1]/div[1]/section/div/div[3]/button
 
