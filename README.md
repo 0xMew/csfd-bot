@@ -19,4 +19,4 @@ To use this tool effectively (if reviving or adapting it for personal experiment
 - Implement a **proxy management system** to obfuscate the origin of requests.
 - Use **custom or disposable email services** to avoid detection.
 
-With these precautions in place, the tool can theoretically generate an unlimited number of undetectable accounts.
+With these precautions in place, the tool can generate an unlimited number of undetectable accounts.
